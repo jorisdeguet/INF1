@@ -9,8 +9,8 @@ heights = []
 with open('data.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
     for row in spamreader:
-        times.append(float(row[0]))
-        heights.append(float(row[1]))
+        times.append(float(row[0])/120)
+        heights.append(float(row[1])*2.54)
 
 print(times)
 print(heights)
@@ -23,11 +23,17 @@ deg3 = np.polyfit(x, y, 1)
 p3 = np.poly1d(deg3)       # créé une série affichable sur le plot
 
 deg4 = np.polyfit(x, y, 2)
+print(deg4)
 p4 = np.poly1d(deg4)
+vitesse = np.polyint(p4)
+print(vitesse)
+accel = np.polyint(vitesse)
+print(accel)
+acc = np.poly1d(accel)
 
 xp = np.linspace(0, 5, 300)
 
 plt.plot(x, y, '.')
-plt.plot(x, p4(x), '-', x, p3(x), '--')
+plt.plot(x, p4(x), '-', x, vitesse(x), '--', x, accel(x), '--')
 plt.show()
 
