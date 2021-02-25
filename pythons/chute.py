@@ -1,26 +1,33 @@
 import csv
 import numpy as np
+from numpy.polynomial import Chebyshev
 import matplotlib.pyplot as plt
+
+times = []
+heights = []
 
 with open('data.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
     for row in spamreader:
+        times.append(float(row[0]))
+        heights.append(float(row[1]))
 
-        print('.... '.join(row))
+print(times)
+print(heights)
 
+x = np.array(times)
+y = np.array(heights)
 
-x = np.array([0.0, 1.0, 2.0, 3.0, 4.0, 5.0])
-y = np.array([0.0, 0.8, 0.9, 0.1,-0.8,-1.0])
+# calcul une approx polynomial de y en x^i i allant jusqu'à 3
+deg3 = np.polyfit(x, y, 1)
+p3 = np.poly1d(deg3)       # créé une série affichable sur le plot
 
-z = np.polyfit(x, y, 3)
+deg4 = np.polyfit(x, y, 2)
+p4 = np.poly1d(deg4)
 
-p30 = np.poly1d(np.polyfit(x, y, 30))
+xp = np.linspace(0, 5, 300)
 
-p = np.poly1d(z)
-xp = np.linspace(-2, 6, 100)
-
-_ = plt.plot(x, y, '.', xp, p(xp), '-', xp, p30(xp), '--')
-plt.ylim(-2,2)
-(-2, 2)
+plt.plot(x, y, '.')
+plt.plot(x, p4(x), '-', x, p3(x), '--')
 plt.show()
 
