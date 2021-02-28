@@ -25,22 +25,27 @@ for i in range(1, len(x)):
 print(speeds)
 
 # calcul une approx polynomial de y en x^i i allant jusqu'à 3
-deg3 = np.polyfit(x, y, 1)
-p3 = np.poly1d(deg3)       # créé une série affichable sur le plot
+deg1 = np.polyfit(x, y, 1)
+p1 = np.poly1d(deg1)       # créé une série affichable sur le plot
+deg2 = np.polyfit(x, y, 2)
+p2 = np.poly1d(deg2)
+print("--------------------------")
+print(p1)
+print("--------------------------")
+print("--------------------------")
+print(p2)
+print("--------------------------")
 
-deg4 = np.polyfit(x, y, 2)
-print(deg4)
-p4 = np.poly1d(deg4)
-vitesse = np.polyint(p4)
-print(vitesse)
+vitesse = np.polyint(p2)
+#print(vitesse)
 accel = np.polyint(vitesse)
-print(accel)
+#print(accel)
 acc = np.poly1d(accel)
 
 xp = np.linspace(0, 5, 300)
 
 plt.plot(x, speeds, '.')
 plt.plot(x, y, '.')
-plt.plot(x, p4(x), '-', x, vitesse(x), '--', x, accel(x), '--')
+plt.plot(x, p2(x), '-', x, vitesse(x), '--', x, accel(x), '--')
 plt.show()
 
