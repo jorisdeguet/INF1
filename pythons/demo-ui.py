@@ -1,6 +1,8 @@
 import random
 from math import *
 
+# regarder https://www.youtube.com/watch?v=KAmZe5D3v5I
+
 import PySimpleGUI as sg
 
 
