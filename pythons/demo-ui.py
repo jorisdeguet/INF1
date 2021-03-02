@@ -1,10 +1,11 @@
 import random
 import itertools
+import PySimpleGUI as sg
 from math import *
 
 # regarder https://www.youtube.com/watch?v=KAmZe5D3v5I
 
-import PySimpleGUI as sg
+
 
 
 largeur = 600
@@ -18,12 +19,16 @@ class Personne:
         self.size = 4
         self.vitesse = vitesse
         self.direction = direction
-        self.contact = False
+        self.contact = []
+
     def move(self):
         self.x += self.vitesse * cos(self.direction)
         self.x = self.x % largeur
         self.y += self.vitesse * sin(self.direction)
         self.y = self.y % hauteur
+
+    def __str__(self):
+        return '(' + str(self.x) + ' ' + str(self.y) + ')'
 
     def contacts(self, m):
         if m.x - self.x > self.size:
@@ -36,9 +41,19 @@ class Personne:
             return False
         return True
 
+def detectContact(gens):
+    print('--------------------------------------------------------------------')
+    for a in gens:
+        a.contact.clear()
+    for a, b in itertools.combinations(gens, 2):
+        if a.contacts(b):
+            a.contact.append(b)
+            b.contact.append(a)
+    # for a in gens:
+    #     print(str(a) + ' : ', *a.contact)
 
 gens = []
-for i in range(0,100):
+for i in range(0,20):
     personne = Personne(
         random.randint(0, largeur),
         random.randint(0, hauteur),
@@ -66,33 +81,6 @@ window['-ML1-'+sg.WRITE_ONLY_KEY].print(1, 2, 3, 4, end='', text_color='red', ba
 window['-ML1-'+sg.WRITE_ONLY_KEY].print('\n', end='')
 window['-ML1-'+sg.WRITE_ONLY_KEY].print(1,2,3,4,text_color='white', background_color='green')
 counter = 0
-
-
-def detectContact(gens):
-    for a in gens:
-        a.contact = False
-    for a, b in itertools.combinations(gens, 2):
-        if a.contacts(b):
-            a.contact = True
-            b.contact = True
-
-
-    # for i in range(0, len(gens)):
-    #     for j in range(0, i):
-    #         a = gens[i]
-    #         b = gens[j]
-    #         if a == b:
-    #             continue
-    #         if a.contacts(b):
-    #             a.contact = True
-    #             b.contact = True
-
-    # for a, b in zip(gens, gens[1:]):
-    #     if a.contacts(b):
-    #         a.contact = True
-    #         b.contact = True
-
-
 
 
 while True:             # Event Loop
