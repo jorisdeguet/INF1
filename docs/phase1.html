@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="page du cours professions informatiques">
+        <meta name="author" content="Département informatique, collège Édouard Montpetit">
+
+        <title>TP 1</title>
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <style>
+            body {
+                padding-top: 70px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">INF1 : <strong>sci info</strong></a>
+                </div>
+                <div class="navbar-collapse collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Page du cours</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row well">
+                <div class="">
+                    <strong id="s1">But du travail</strong>
+                    <div class="col-xs-12 alert">
+                        <strong>Calcul les racines carrées ou quadratique</strong>
+                        <p>
+                            Calculer la racine carrée d'un nombre, on trouve ça dans toutes les
+                            calculatrices du monde.
+                        </p>
+                        <p>
+                            Personellement, je ne sais pas comment calculer la racine carrée d'un nombre 
+                            à la main. Mais je peux imaginer une solution stupide mais très lente. 
+                            L'avantage avec les solutions stupides mais lentes, c'est qu'avec un ordinateur,
+                            elles restent stupides mais elle deviennent rapides.
+                        </p>
+                    </div>
+                    <div class="col-xs-6 alert ">
+                        <strong>Principe 1 : approcher par en-dessous</strong>
+                        En prenant pour exemple la racine carrée de 8:
+                        <ul>
+                            <li>unité :  
+                                <ul>
+                                    <li>0 : 0<sup>2</sup> = 0</li>
+                                    <li>1 : 1<sup>2</sup> = 1</li>
+                                    <li>2 : 2<sup>2</sup> = 4</li>
+                                    <li>3 : 3<sup>2</sup> = 9</li>
+                                    <li>Comme 8 est entre 4 et 9, on sait que la racine de 8 est entre 2 et 3: 2,xyz</li>
+                                    <li>on valide 2 comme partie entière</li>
+                                </ul>
+                            </li>
+                            <li>première décimale
+                                <ul>
+                                    <li>2,0<sup>2</sup> = 4</li>
+                                    <li>2,1<sup>2</sup> = 4,41</li>
+                                    <li>2,2<sup>2</sup> = 4,84</li>
+                                    <li>2,3<sup>2</sup> = 5,29</li>
+                                    <li>2,4<sup>2</sup> = 5,76</li>
+                                    <li>2,5<sup>2</sup> = 6,25</li>
+                                    <li>2,6<sup>2</sup> = 6,76</li>
+                                    <li>2,7<sup>2</sup> = 7,29</li>
+                                    <li>2,8<sup>2</sup> = 7,84</li>
+                                    <li>2,9<sup>2</sup> = 8,41</li>
+                                    <li>On peut alors dire que racine de 8 est de la forme 2,8yz</li>
+                                </ul>
+                            </li>
+                            <li>2ème décimale
+                                <ul>
+                                    <li>2,80<sup>2</sup> = 7,84</li>
+                                    <li>2,81<sup>2</sup> = 7,8961</li>
+                                    <li>2,82<sup>2</sup> = 7,9524</li>
+                                    <li>2,83<sup>2</sup> = 8,0089</li>
+                                    <li>On peut alors dire que racine de 8 est de la forme 2,82z</li>
+                                </ul>
+                            </li>
+                            <li>etc. </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 alert ">
+                        <strong>Principe 2 : dichotomie (couper en 2)</strong>
+                        On part du principe que la racine carrée de 8 doit être entre 0 et 8, on va essayer de resserrer cette fourchette jusqu'à toruver la racine de 2
+                        <ul>
+                            <li>[0 .. 8] le milieu est : 4<sup>2</sup> = 16</li>
+                            <li>on doit décider si la racine de 8 est dans [0 .. 4] ou [4 .. 8], comme 16 est au dessus de 8, la racine de 8 doit être entre 0 et 4</li>
+                            <li>[0 .. 4] le milieu est 2 : 2<sup>2</sup> = 4</li>
+                            <li>Comme 4 est en dessous de 8, le résultat est dans la moitié haute [2 .. 4]</li>
+                            <li>[2 .. 4] 3<sup>2</sup> = 9 donc [2 .. 3]</li>
+                            <li>[2 .. 3] 2,5<sup>2</sup> = 6,25 donc [2,5 .. 3]</li>
+                            <li>[2,5 .. 3] 2,75<sup>2</sup> = 7,5625 donc [2,75 .. 3]</li>
+                            <li>[2,75 .. 3] 2,875<sup>2</sup> = 8.265625 donc [2,75 .. 2,875]</li>
+                            <li>etc.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-xs-6 alert ">
+                    <strong>
+                        
+                        Racine carrée
+                    </strong>
+                    <p>
+                        En utilisant le principe de votre choix (dichotomie ou approche par en-dessous), 
+                        vous devez programmer une fonction qui permet de calculer la racine carrée d'un nombre.
+                    </p>
+                    <p>
+                        Le résultat produit (rac(x) doit être tel que rac(x)*rac(x) est égal à x à 0,001 près. 
+                    </p>
+                    <p>
+                        La correction se fera sur les nombres suivants : 0 0,1 0,2 0,9 8 9 81 123
+                    </p>
+                    <ul>
+                        <li><span class="label label-success">1 point</span> Prend un nombre float en paramètre et renvoie un float ou un decimal en entrée et un decimal en retour</li>
+                                                <li><span class="label label-success">1 point</span>Renvoie une erreur sur les nombres négatifs</li>
+                        <li><span class="label label-success">3 points</span>Fonctionne sur les nombres au dessus de 1 </li>
+                        <li><span class="label label-success">2 points</span>Fonctionne sur les nombres entre 0 et 1</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="row ">
+                <div class="col-xs-9 alert">
+                    <strong>
+                        <span class="label label-success">2 points</span>
+                        Comparaison de performance
+                    </strong>
+                    <p>
+                        En calculant la racine carrée de 
+                    </p>
+                    <ul>
+                        <li>générer un tableau de 10000 nombres tirés au pseudo hasard entre 10 et 1000</li>
+                        <li>calculer le temps nécessaire pour calculer les racines carrées de ces nombres avec votre méthode</li>
+                        <li>calculer le temps nécessaire pour calculer les racines carrées avec la méthode fournie dans python</li>
+                        <li>afficher les 2 durées avec un print en millisecondes et le temps moyen en millisecondes pour les 2 méthodes</li>
+                    </ul>
+                    <p>
+                        Vous devez déterminer toutes les méthodes qui découlent de votre interface graphique. Si le
+                        professeur identifie des méthodes manquantes, des méthodes inutiles ou des doublons, vous perdrez des points.
+                    </p>
+                </div>
+            </div>
+                      
+           
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
