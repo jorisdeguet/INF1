@@ -1,3 +1,5 @@
+# coding: utf-8
+
 # calculer pi avec seulement des opération de base
 import math
 import time
