@@ -1,3 +1,5 @@
+# coding: utf-8
+
 import math
 
 # conversions string float int

@@ -1,4 +1,5 @@
-
+# en Python 3, il n'y a pas de limite sur les int.
+# en Python 2, il y a des entiers en 32 et 64 Attention les nombres en sciences c'est important
 
 def fibo(n):
     if n == 0:

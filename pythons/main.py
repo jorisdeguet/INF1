@@ -1,3 +1,5 @@
+# coding: utf-8
+
 # This is a sample Python script.
 
 # Press ⌃R to execute it or replace it with your code.
@@ -7,6 +9,7 @@
 # utiliser pybook pour éviter l'installation
 # python 3
 # pytorch en semaine 14
+# on utilise virtualenv dans Python pour gérer les librairies
 
 # Calculer une approximation de Pi
 # Trouver une simulation qui marche simuler des lapins qui niquent pour voir si ça

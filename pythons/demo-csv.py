@@ -1,3 +1,5 @@
+# coding: utf-8
+
 # montrer comment lire un fichier CSV pour
 # afficher un graphe
 
