@@ -57,7 +57,26 @@
                             Plan de cours, évaluations et calendrier.
                         </p>
                         <p>
-                            On va faire une première de démo d'un script Python "Bonjour le monde". 
+                            Nous allons expliquer ce qu'est:
+                        </p>
+                        <ul>
+                            <li>un langage de programmation : des ordres à l'ordinateur selon une syntaxe très rigide</li>
+                            <li>un fichier de code source (pour nous Python) : un fichier texte qui respecte cette syntaxe très rigide</li>
+                            <li>
+                                l'interpréteur (Python pour nous) : le programme qui est capable de lire cette syntaxe et
+                                d'exécuter les ordres, nous on appelle ça des instructions
+                            </li>
+                            <li>
+                                une expression : c'est une partie de code source qui a une valeur.
+                                Par exemple : <em>3 * (4+5)</em> est une expression dont la valeur est le nombre entier 60.
+                            </li>
+                            <li>
+                                une instruction : un ordre qu'on donne à l'ordinateur mais qui ne vaut rien.
+                                Par exemple <em>print( 3 + 5 )</em> provoque l'affichage de 8 à l'écran.
+                            </li>
+                        </ul>
+                        <p>
+                            On va faire une première de démo d'un script Python "Bonjour le monde".
                         </p>
                         <p>
                             On va montrer comment utiliser l'environnement de développement, comment démarrer un script, comment mettre un point d'arrêt.
@@ -74,28 +93,29 @@
                         <p>
                             Vous devrez compléter les exercices de la semaine.
                         </p>
-                        <p>
-                            Commencez votre projet en lui donnant le nom de votre application.
-                            Choisissez un nom de package approprié pour votre application.
-                            Commencez la mise en place d'un projet avec une activité contenant:
-                        </p>
+
                     </div>
                     <div class="col-md-12 well">
                         <strong>Exercices de la semaine</strong>
-                        <h3>Exercice A</h3>
+                        <h3>Exercice hello-world.py</h3>
                         <p>
-                            Créez un projet appelé <strong>MultiMulti</strong> contenant 3 activités.
-                            Ajoutez un menu d'options dans le ActionBar (révisions) permettant d'accéder à chacune des activités
-                            depuis chacune des activités.
+                            Créer un premier dossier pour vos exercices et ouvrez le dans PyCharm.
+                            Dans le projet, créez un fichier texte appelé hello-world.py.
                         </p>
-                        <h3>Exercice B</h3>
                         <p>
-                            Créez un projet appelé <strong>CommunicationsIntra</strong> contenant 1 seule activité.
-                            Ajoutez un bouton et une liste (faites une recherche pour un exemple).
-                            Ensuite assurez vous de faire communiquer l'activité et la liste des façons suivantes:
+                            Dans ce fichier, nous allons créer une fonction <em>main</em>. Cette fonction
+                            va uniquement afficher vos nom et prénom dans le console.
+                        </p>
+                        <p>
+                            Exécutez cette méthode en mode normal puis en mode débogage.
+                        </p>
+                        <h3>Exercice calculs.py</h3>
+                        <p>
+                            En vous inspirant de la video de la semaine,
+                            créez un fichier <em>calculs.py</em> dans même projet. Ce script doit
                         </p>
                         <ul>
-                            <li>Quand on appuie sur le bouton de l'activité, cela rajoute un élément au début de la liste du ListFragment</li>
+                            <li>Afficher dans la console le résultat de 94833 * 1234394829</li>
                             <li>Quand on appuie sur un élément de la liste, cet élément est communiqué à l'activité qui affiche un Toast</li>
                         </ul>
                         Il est fortement recommandé d'utiliser un bus d'événements (Otto par exemple)

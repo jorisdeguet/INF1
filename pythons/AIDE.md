@@ -3,6 +3,11 @@
 Des exemples et exercices pour le cours de Python 
 pour les sicentifiques
 
+## installation
+
+Il faut une installation de python3 sur la machine
+Il faut installer PyCharm comme environnement de développement (éditeur, débogueur)
+
 ## exos possibles 
 
 Adapter https://towardsdatascience.com/building-simulations-in-python-a-complete-walkthrough-3965b2d3ede0
