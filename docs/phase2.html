@@ -30,7 +30,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">INF1 : <strong>sci info</strong></a>
+                    <a class="navbar-brand" href="index.html">INF1 : <strong>TP1</strong></a>
                 </div>
                 <div class="navbar-collapse collapse navbar-right">
                     <ul class="nav navbar-nav">
@@ -46,41 +46,123 @@
                 <div class="">
                     <strong id="s1">But du travail</strong>
                     <div class="col-xs-12 alert">
-                        <strong>Afficher un nuage de points mesurés</strong>
+                        <strong>Introduction</strong>
                         <p>
-                            TODO
+                            Quand on expérimente en sciences, on récupère des données et on souhaite voir si
+                            on peut en extraire une formule / équation / théorie.
+                        </p>
+                        <p>
+                            Dans ce processus, on peut utiliser plusieurs moyens qui sont facilités par
+                            l'informatique.
+                        </p>
+                        <ul>
+                            <li>Traiter, modifier, calculer sur beaucoup de mesures</li>
+                            <li>Visualiser les données</li>
+                            <li>Essayer de trouver une formule qui "colle" aux données</li>
+                            <li>Voir à quel point la formule est bonne</li>
+                        </ul>
+
+
+                        <strong>Le phénomène étudié</strong>
+                        <p>
+                            On essaie de déterminer quelle quantité d'énergie correspond à la vitesse d'un objet
+                            avec une certaine masse.
+                        </p>
+                        <p>
+                            On a effectué une série d'expériences dans une
                         </p>
 
-                        <strong>Trouver une courbe qui correspond aux points</strong>
+                        <strong>Différentes étapes</strong>
                         <p>
                             TODO
                         </p>
                     </div>
                     <div class="col-xs-6 alert ">
-                        <strong>Principe 1 : approcher par en-dessous</strong>
-                        TODO
+                        <strong>
+                            <span class="label label-success">2 points</span>
+                            Chargement des données depuis le fichier CSV
+                        </strong>
+                        <p>
+                            Tu dois charger le fichier CSV appelé energies.csv
+                        </p>
+                        <p>
+                            Pour démontrer que ça fonctionne, fais en sorte que chaque ligne
+                            s'affiche dans la console de l'application.
+                        </p>
+                        <pre>colonne 1 : 744.0767546189211  colonne 2 : 3028797.7951537026
+colonne 1 : 712.8799544954765  colonne 2 : 2868918.662697371
+colonne 1 : 561.9147596101623  colonne 2 : 1751509.2705130153
+colonne 1 : 214.30142994490154  colonne 2 : 267666.19081086485
+colonne 1 : 257.7996020799187  colonne 2 : 375263.7294935496
+colonne 1 : 785.673856989051  colonne 2 : 3496528.0862930445
+colonne 1 : 587.0405541492664  colonne 2 : 1778133.2107211526
+colonne 1 : 973.6550276975032  colonne 2 : 5178806.838988018</pre>
                     </div>
                     <div class="col-xs-6 alert ">
-                        <strong>Principe 2 : dichotomie (couper en 2)</strong>
-                        TODO
+                        <strong>
+                            <span class="label label-success">2 points</span>
+                            Affichage du nuage de points
+                        </strong>
+                        <p>
+                            En utilisant un graphe matplotlib, affiche les données du fichier :
+                        </p>
+                        <ul>
+                            <li>la première colonne donne la valeur de l'absisse du point (l'axe des x)</li>
+                            <li>la deuxième colonne donne la valeur de l'ordonnée du point (l'axe des y)</li>
+                        </ul>
+                        <img src="images/tp2-nuage.png" style="width: 100%;margin: 20px;">
                     </div>
                 </div>
             </div>
             <div class="row ">
                 <div class="col-xs-6 alert ">
                     <strong>
-                        Gna
+                        <span class="label label-success">2 points</span>
+                        Approximation polynomiale
                     </strong>
                     <p>
-                        TODO
+                        Tu dois trouver les approximations polynomiales du nuage de point pour les degrés allant
+                        de 0 à 5.
                     </p>
                     <p>
-                        TODO
+                        Tu dois démontrer que c'est fait en affichant les polynômes dans la console.
                     </p>
-                    <p>
-                        TODO
-                    </p>
+<pre>---------------------------------
+approximation polynomial de degre 0
 
+1.857e+06
+---------------------------------
+approximation polynomial de degre 1
+
+5601 x - 1.012e+06
+---------------------------------
+approximation polynomial de degre 2
+       2
+5.649 x - 144.1 x + 1.507e+04
+---------------------------------
+approximation polynomial de degre 3
+            3         2
+-0.0003907 x + 6.243 x - 393.3 x + 3.947e+04
+---------------------------------
+approximation polynomial de degre 4
+            4           3         2
+-6.049e-06 x + 0.01154 x - 1.437 x + 1393 x - 7.178e+04
+---------------------------------
+approximation polynomial de degre 5
+            5             4           3         2
+-2.841e-08 x + 6.595e-05 x - 0.05402 x + 24.17 x - 2561 x + 9.616e+04</pre>
+                </div>
+
+                <div class="col-xs-6 alert ">
+                    <strong>
+                        <span class="label label-success">2 points</span>
+                        2 points Visualisation du nuage et polynomes
+                    </strong>
+                    <p>
+                        Tu dois superposer les polynomes et le nuage de point dans un second graphique matplotlib
+                        afin de visualiser à quel point chaque courbe correspond au nuage de points.
+                    </p>
+                    <img src="images/tp2-superpo.png" style="width: 100%;margin: 20px;">
                 </div>
 
             </div>
@@ -88,13 +170,20 @@
                 <div class="col-xs-9 alert">
                     <strong>
                         <span class="label label-success">2 points</span>
-                        TODO
+                        Des données à la théorie
                     </strong>
                     <p>
-                        TODO
+                        Dans un document Word que tu vas joindre à ton script Python dans ta remise,
+                        tu dois créer un premier chapitre de données avec des copies des graphiques
+                        produits par le script.
                     </p>
                     <p>
-                        TODO
+                        Dans un chapitre "analyse des résultats", tu dois décrire quelle est selon
+                        toi l'approximation polynomiale la plus appropriée.
+                    </p>
+                    <p>
+                        Dans un chapitre "Formule", tu dois écrire la formule qui selon toi relie
+                        l'énergie mesurée à la vitesse dans ce phénomène,
                     </p>
                 </div>
             </div>
