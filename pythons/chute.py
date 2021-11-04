@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 times = []
 heights = []
 
-with open('data.csv', newline='') as csvfile:
+with open('demo-csv/data.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=' ', quotechar='|')
     for row in spamreader:
         times.append(float(row[0])/120)
