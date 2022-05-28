@@ -1,0 +1,6 @@
+-------------------------------
+Here's the Input Data:
+- - - - - - - - - - - - - - - - 
+Numper of Sample: 1000
+X & Y limites:  30 ,  30
+Distance required for Contamination: 1.5
