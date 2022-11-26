@@ -9,8 +9,8 @@ import sys
 entier = 5
 texte = "5"
 
-print(texte+"5")          # + pour un texte, c'est concaténer : mettre à la suite "5"+"5" = "55"
-print(entier+5)           # + pour des entiers c'est l'addition
+print(texte + "5")          # + pour un texte, c'est concaténer : mettre à la suite "5"+"5" = "55"
+print(entier + 5)           # + pour des entiers c'est l'addition
 print(bin(entier+5))
 
 
