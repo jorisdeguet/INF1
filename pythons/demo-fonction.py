@@ -13,6 +13,12 @@ def ma_fonction(a,b,c):
     # ou la methode a été appelée avec la valeur de l'expression
     return 10 * mavariable
 
+def double(x):
+    return x * x
+def quad(x):
+    return double(x) \
+           * double(x);
+
 # dans le programme on va appeler la fonction
 # il suffit d'écrire son nom suivi des valeurs pour les parametres
 # entre parentheses
@@ -23,9 +29,12 @@ def ma_fonction(a,b,c):
 # le return de ma_fonction
 mon_resultat = ma_fonction(3, 5.0, 12)
 print(mon_resultat)
+print(ma_fonction(3, 5.0, 12)) # si je rappelle la fonction le code qui est dedans est redéclenché TODO POINT ARRET
 
 # les parametres ne sont pas forcement des constantes
 # elles peuvent etre n'importe quelle expression
 a = 120
 autre_resultat = ma_fonction(a, ma_fonction(1,2,3), (5+9))
 print(autre_resultat)
+
+print(quad(9))
