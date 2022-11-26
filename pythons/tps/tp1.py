@@ -8,7 +8,7 @@ from math import sqrt
 def milieu(a, b):
     return (a+b) / 2.0
 
-def racineCarree(x):
+def racineCarree(x: float) -> float:
     a = 0
     b = (1 if x<1 else x)
     mil = milieu(a,b)
@@ -42,7 +42,7 @@ def comparaison():
     for i in range(1,1000):
         nombre = random.randint(1,10000)
         a = time.time()
-        r1 = racineCarree2(nombre)
+        r1 = racineCarree(nombre)
         b = time.time()
         r2 = sqrt(nombre)
         c = time.time()
