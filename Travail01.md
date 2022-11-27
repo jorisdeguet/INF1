@@ -66,3 +66,14 @@ Vous devrez aussi montrer les appels de cette méthode sur les nombre 0 0,1 0,2 
 - **1 point** le fichier existe, son nom respecte la consigne, il contient la fonction demandée et n'a pas d'erreur de syntaxe
 - **2 points** les racines carrées affichées pour 0 0,1 0,2 0,9 8 9 81 123 sont bonnes à 0,001 près.
 - **1 point** l'appel pour le nombre négatif lance une exception
+
+
+
+Possibilité de calculer un logarithme à la place comme un inverse de exponentiel
+https://www.quora.com/What-does-it-mean-to-raise-a-number-to-a-non-integer-power
+
+Possibilité de chercher l'inverse de 
+```python
+def funkyFonction(x):
+    return x**x
+```
