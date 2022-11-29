@@ -13,7 +13,7 @@ Repo pour code et organisation du cours
 | 6           | Révisions, formatif                         | TP2 : science expérimentale |
 | 7           | **Examen intra**                            | 25%                         |
 | 8           | Fichiers, CSV                               | 50%                         |
-| 9           | Calcul et Numpy                             | 75%                         |
+| 9           | Calcul et Numpy, librairie et environnement | 75%                         |
 | 10           | Graphiques et matplotlib                    | 100%                        |
 | 11          | Interface graphique PySimpleGUI             | TP3 :                       |
 | 12           | Objet et classes                            | 25%                         |
