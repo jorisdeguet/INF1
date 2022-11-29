@@ -29,4 +29,6 @@ https://fr.wikipedia.org/wiki/Arbre_AVL
 # tri de crepes pancake sorting
 - visualiser une crepe
 - implanter un algorithme de tri et visualiser les étapes
-- 
+
+
+# autre possibilité faire la simulation s'un phenomene physique ou on ne peut pas modeler trop complique
