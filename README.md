@@ -15,7 +15,7 @@ Repo pour code et organisation du cours
 | 8           | Fichiers, CSV                               | 50%                         |
 | 9           | Calcul et Numpy, librairie et environnement | 75%                         |
 | 10           | Graphiques et matplotlib                    | 100%                        |
-| 11          | Interface graphique PySimpleGUI             | TP3 :                       |
+| 11          | Algorithmique le retour                     | TP3 :                       |
 | 12           | Objet et classes                            | 25%                         |
 | 13           | Performance et                              | 50%                         |
 | 14          | Formatif/révisions. Aperçu Réseaux neurones | 75%                         |
