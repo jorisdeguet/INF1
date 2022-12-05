@@ -9,7 +9,7 @@
 - Pour qu'un ordinateur ou quelqu'un qui n'y connait rien
 - Puisse résoudre le problème
 
-Du coup, si on ne sait pas résoudre le problème nous mêmes,
+> Du coup, si on ne sait pas résoudre le problème nous mêmes,
 on va avoir du mal à expliquer à quelqu'un comment faire.
 
 Par exemple, on ne peut pas écrire un algorithme pour résoudre
@@ -31,7 +31,7 @@ qu'on n'a plus besoin de programmer
 
 ## Une recette dans ta langue
 
-Ecrire en français comment tu fais pour résoudre le problème, détaille jusqu'à ce
+> Ecrire en français comment tu fais pour résoudre le problème, détaille jusqu'à ce
 qu'un ami qui n'y connait rien pourrait sans doute le faire.
 
 Essaie d'appliquer la "recette" sur quelques exemples.
