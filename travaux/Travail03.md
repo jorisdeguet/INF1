@@ -20,6 +20,10 @@ https://fr.wikipedia.org/wiki/Arbre_AVL
 
 
 
+# autre possibilité
+
+faire une visualisation de données sur le rechauffement
+https://www.youtube.com/watch?v=uhxiXOTKzfs
 
 
 # autre possibilité distance entre chaine de caractères
