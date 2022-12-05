@@ -19,6 +19,7 @@ import copy
 import csv
 
 import numpy as np
+import scipy
 #import scipy as sp
 from matplotlib import pyplot as plt
 
@@ -47,4 +48,7 @@ for degre in range(0,6):
     plt.plot(sorted, [p(e) for e in sorted])
 plt.show()
 
-#scipy.optimize.curve_fit(lambda t,a,b: a+b*numpy.log(t),  x,  y)
+scisci = scipy.optimize.curve_fit(lambda t,a,b: a+b*np.log(t),  x,  y)
+print(scisci)
+
+# TODO explore scikit-learn
