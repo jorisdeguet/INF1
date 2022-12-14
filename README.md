@@ -25,9 +25,36 @@ Repo pour code et organisation du cours
 https://mujoco.org/
 
 ```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+flowchart TD;
+    execInter(Python interactif)
+    execScript(Python script)
+    execJupyter(Python Jupyter)
+    execModule(Python module et multifichier)
+    expr1(Constante, valeur et type)
+    expr2(Expression et opérateur)
+    expr3(Tableaux, tuples, dictionnaires)
+    expr4(Variables)
+    flowSeq(Flot d'exécution séquence )
+    flowIf(Flot d'exécution alternative)
+    flowFor(Flot d'exécution répétition)
+    flowError(Flot d'exécution erreur, lance et attrape)
+    flowRec(Flot d'exécution 4 récursion)
+    fonction1(Appel fonction existante)
+    fonction2(Définition d'une fonction syntaxe, type)
+    fonction3(Définition d'une fonction syntaxe, type)
+    fonction4(Récursivité)
+    pandas1(Pandas 1 import export)
+    pandas2(Pandas 2 dataframe et modif)
+    pandas3(Pandas 3 interaction avec autres librairies)
+    np1(Numpy 1 tableaux)
+    
+    expr1-->expr2-->expr3
+    execInter-->execScript-->execJupyter
+    execScript-->execModule
+    flowSeq-->flowIf-->flowFor
+    flowSeq-->flowError
+    fonction1-->fonction2-->fonction3-->fonction4
+    execScript-->np1
+    flowFunction-->np1
+    pandas1-->pandas2-->pandas3
 ```
