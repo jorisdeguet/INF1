@@ -23,3 +23,11 @@ Repo pour code et organisation du cours
 
 
 https://mujoco.org/
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
