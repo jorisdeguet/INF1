@@ -34,12 +34,15 @@ flowchart TD;
     admin(Python pour l'administration système)
     data(Python pour les données)
     ai(Python pour l'intelligence artificielle)
-    
-    core-->fichiers->admin
+    ui(Python et interface graphique utilisateur)
+    core-->fichiers-->admin
     core-->sciences
+    core-->web
+    core-->objet
     fichiers-->sciences
-    core-->sciences->ai
+    core-->sciences-->ai
     core-->data
+    core-->ui
 ```
 
 
