@@ -26,6 +26,25 @@ https://mujoco.org/
 
 ```mermaid
 flowchart TD;
+    core(Python fondamentaux)
+    objet(Python orienté objet)
+    fichiers(Python et les fichiers)
+    web(Python pour un serveur web)
+    sciences(Python pour les sciences)
+    admin(Python pour l'administration système)
+    data(Python pour les données)
+    ai(Python pour l'intelligence artificielle)
+    
+    core-->fichiers->admin
+    core-->sciences
+    fichiers-->sciences
+    core-->sciences->ai
+    core-->data
+```
+
+
+```mermaid
+flowchart TD;
     execInter(Python interactif)
     execScript(Python script)
     execJupyter(Python Jupyter)
