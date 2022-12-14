@@ -1,24 +1,6 @@
-# Travail 3 : arbre binaire de recherche
+# Travail 3 : TODO
 
-Dans ce TP, nous allons manipuler une structure importante en informatique.
-
-Les arbres binaire de recherche permettent de chercher un élément très rapidement.
-
-## structure de l'arbre
-
-Un arbre est constitué de 3 éléments:
-- la valeur du noeud
-- un sous-arbre gauche (la branche gauche)
-- un sous-arbre droit (la branche droite)
-
-## un arbre binaire de recherche
-
-On va s'assurer 
-
-
-https://fr.wikipedia.org/wiki/Arbre_AVL
-
-
+PLusieurs fichiers
 
 # autre possibilité
 
@@ -34,5 +16,9 @@ https://www.youtube.com/watch?v=uhxiXOTKzfs
 - visualiser une crepe
 - implanter un algorithme de tri et visualiser les étapes
 
+# le jeu de la vie
 
-# autre possibilité faire la simulation s'un phenomene physique ou on ne peut pas modeler trop complique
+# autre possibilité faire la simulation d'un phenomene physique ou on ne peut pas modeler trop complique
+
+Trouver la trajectoire d'une balle de densité d lancée a une certaine
+vitesse avec du vent en bas contraire et du vent en haut favorable

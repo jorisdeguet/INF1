@@ -29,6 +29,11 @@ Par exemple, est-ce que je dois travailler avec
 Concrètement, à chaque fois qu'on écrit un algorithme, on ajoute un nouvel outil
 qu'on n'a plus besoin de programmer
 
+## Identifier ce qu'on doit fournir, ce qu'on obtient
+
+- Qu'est-ce qu'on doit fournir à l'ordinateur pour qu'il puisse résoudre le problème?
+- Qu'est-ce qu'on obtient en retour?
+
 ## Une recette dans ta langue
 
 > Ecrire en français comment tu fais pour résoudre le problème, détaille jusqu'à ce
@@ -67,7 +72,11 @@ Pour commencer un algorithme, il faut savoir ce qu'on vise:
 - expliquer à des gens, pour cela on a des langages
 - expliquer / programmer pour une machine, pour ça on a des langages de programmation
 
-Le but final est d'avoir un langage sans ambiguité, pas toujours le même
+Le but final est d'avoir un langage sans ambiguité, pas toujours le même:
+- pour les humains, 
+  - on peut utiliser un langage naturel
+  - on peut utiliser un langage pseudo-code
+- pour les machines, on peut utiliser un langage de programmation
 
 ------------
 
