@@ -232,6 +232,8 @@ Il me faudrait aussi un moyen d'avoir les mots du dictionnaire.
 ```
 
 
+## Ecrire un nombre en toutes lettres en français
 
+## 
 
 
