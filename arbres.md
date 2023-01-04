@@ -2,7 +2,7 @@
 ## Python vue ensemble
 
 ```mermaid
-flowchart TD;
+flowchart LR;
     core(Python fondamentaux)
     objet(Python orienté objet)
     fichiers(Python et les fichiers)
@@ -91,6 +91,25 @@ flowchart LR;
     
     binaire-->son-->video-->compressionVideo
     binaire-->image-->video-->film
+```
+
+## Info : algorithme et résolution de problème
+
+```mermaid
+flowchart LR;
+    algoBase(Fondamentaux de l'algorithmique)
+    algoStructure(Algorithme et structures de données)
+    algoOuML(Choisir entre algorithmique et apprentissage artificiel)
+    mlBase(Fondamentaux de l'apprentissage artificiel)
+    mlTransformer(Apprentissage et transformers)
+    mlRenforcement(Apprentissage par renforcement)
+    mlReseauxNeurones(Apprentissage de réseaux de neurones)
+    
+    algoBase-->algoStructure
+    algoBase-->algoOuML
+    mlBase-->algoOuML
+    mlBase-->mlReseauxNeurones-->mlTransformer
+    mlBase-->mlRenforcement
 ```
 
 
