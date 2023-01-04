@@ -15,6 +15,17 @@ on va avoir du mal à expliquer à quelqu'un comment faire.
 Par exemple, on ne peut pas écrire un algorithme pour résoudre
 un cube Rubik mélangé si on ne sait pas nous-mêmes comment le faire.
 
+## Voir si ça existe déjà
+
+- librairie
+- StackOverflow
+- littérature scientifique
+- ChatGPT
+
+Juste pour être clair, pendant qu'on apprend, on va sans doute souvent refaire des choses déjà faites.
+
+On veut juste le faire en toute connaissance de cause.
+
 ## Connaitre ses outils
 
 Un algorithme est une suite d'instructions qu'on donne à l'ordinateur pour 
@@ -233,7 +244,10 @@ Il me faudrait aussi un moyen d'avoir les mots du dictionnaire.
 
 
 ## Ecrire un nombre en toutes lettres en français
+https://bescherelle.ca/ecriture-des-nombres/
 
-## 
+On va commencer par clarifier qu'on veut pouvoir écrire un nombre entier en toutes lettres
+
+## Trouver la date 
 
 
