@@ -25,7 +25,7 @@ Repo pour code et organisation du cours
 https://mujoco.org/
 
 ```mermaid
-flowchart TD;
+flowchart LR;
     core(Python fondamentaux)
     objet(Python orienté objet)
     fichiers(Python et les fichiers)
@@ -47,7 +47,7 @@ flowchart TD;
 
 
 ```mermaid
-flowchart TD;
+flowchart LR;
     execInter(Python interactif)
     execScript(Python script)
     execJupyter(Python Jupyter)
@@ -65,10 +65,6 @@ flowchart TD;
     fonction2(Définition d'une fonction syntaxe, type)
     fonction3(Définition d'une fonction syntaxe, type)
     fonction4(Récursivité)
-    pandas1(Pandas 1 import export)
-    pandas2(Pandas 2 dataframe et modif)
-    pandas3(Pandas 3 interaction avec autres librairies)
-    np1(Numpy 1 tableaux)
     
     expr1-->expr2-->expr3
     execInter-->execScript-->execJupyter
@@ -78,5 +74,22 @@ flowchart TD;
     fonction1-->fonction2-->fonction3-->fonction4
     execScript-->np1
     flowFunction-->np1
+```
+
+
+```mermaid
+flowchart LR;
+    pandas1(Pandas 1 import export)
+    pandas2(Pandas 2 dataframe et modif)
+    pandas3(Pandas 3 interaction avec autres librairies)
+    np1(Numpy 1 tableaux)
+    matplotlib1(MatPlotLib 1 graphique de base)
+    matplotlib2(MatPlotLib 2 graphique depuis une formule)
+    matplotlib3(MatPlotLib 3 graphique depuis des données)
+    
+    matplotlib1-->matplotlib2-->matplotlib3
+    np1-->matplotlib2
     pandas1-->pandas2-->pandas3
 ```
+
+
