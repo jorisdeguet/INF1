@@ -248,6 +248,8 @@ https://bescherelle.ca/ecriture-des-nombres/
 
 On va commencer par clarifier qu'on veut pouvoir écrire un nombre entier en toutes lettres
 
+https://numbertext.github.io
+
 ## Trouver la date 
 
 
