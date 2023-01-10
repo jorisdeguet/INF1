@@ -12,7 +12,7 @@ Repo pour code et organisation du cours
 | [5 →](seances/05.md)   | Algorithmique et débogage                   | 100%                        |
 | [6 →](seances/06.md)   | Révisions, formatif                         | TP2 : science expérimentale |
 | [7 →](seances/07.md)   | **Examen intra**                            | 25%                         |
-| [8 →](seances/08.md)   | Fichiers, CSV, pandas                       | 50%                         |
+| [8 →](seances/08.md)   | Fichiers, CSV, pandas, polars               | 50%                         |
 | [9 →](seances/09.md)   | Calcul et Numpy, librairie et environnement | 75%                         |
 | [10 →](seances/10.md)  | Graphiques et matplotlib                    | 100%                        |
 | [11 →](seances/11.md)  | Algorithmique le retour                     | TP3 : à déterminer          |
