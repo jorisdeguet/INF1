@@ -93,6 +93,8 @@ flowchart LR;
     binaire-->image-->video-->film
 ```
 
+Distinguer les lessons et les projets qui nécessitent les leçons.
+
 ## Info : algorithme et résolution de problème
 
 ```mermaid
@@ -112,6 +114,17 @@ flowchart LR;
     mlBase-->mlRenforcement
 ```
 
+## Gestion de versions fichiers textes : Git et Github
 
+```mermaid
+flowchart LR;
+    gitBase(Fondamentaux de git, dossier, commit)
+    gitLocalRemote(Repo local et distant, push et pull)
+    gitBranches(Git et les branches)
+    gitPourNonDev(Git pour tout le monde)
+    gitBase-->gitLocalRemote
+    gitBase-->gitPourNonDev
+    gitBase-->gitBranches
+```
 
 
