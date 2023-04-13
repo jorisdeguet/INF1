@@ -20,20 +20,3 @@ Repo pour code et organisation du cours
 | [13 →](seances/13.md) | Performance, optimisation parallélisme      | 50%                         |
 | [14 →](seances/14.md) | Formatif/révisions. Aperçu Réseaux neurones | 75%                         |
 | [15 →](seances/15.md) | **Examen final**                            | 100%                        |
-
-
-https://mujoco.org/
-
-Videos
-- comment sauver son contenu de cours
-- trouver le problème de sa connexion internet à la maison
-- quoi acheter comme téléphone pour son enfant
-- gestion de classes
-- expérimenter sur ses méthodes d'enseignement
-  - utiliser son instinct mais pas trop
-  - essayer une nouvelle chose à la fois : permet d'évaluer si c'est ça qui change les choses, garder un cours fonctionnel
-  - le faire en transparence : si eleve capables de comprendre aux eleves, sinon aux parents pour éviter
-- devoirs à la maison et travaux : éviter de cumuler les échecs, choses simples, théorie
-- choisir un ordinateur pour soi et un peu pour le travail
-- c'est quoi un VPN? il m'en faut un?
-- la note, le nombre ou les compétences. En pratique
